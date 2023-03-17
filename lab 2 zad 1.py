@@ -21,3 +21,8 @@ for i in range(20):
     lista.append(random.randint(10, 50))
 print(L)
 print("Najmniejszy element listy to: ",find_min_elem(L))
+print("Pozycja tego elementu to: ",find_poz_min_elem(L)+1)
+
+print(find_poz_min_elem(L))
+print("Najmniejszy element listy to: ",L[poz])
+print("Pozycja tego elementu to: ",poz+1)
