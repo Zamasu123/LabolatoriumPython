@@ -11,7 +11,19 @@ def nwd_r(a, b):
 
 def nwd_12(a, b):
     while b!=a:
-
+        if a>b:
+            a=a-b
+        else:
+            b=b-a
     return a
+def nwd_r2(a, b):
+    if a==b:
+        return a
+    elif a>b:
+        return nwd_r2(a-b, b)
+    else:
+        return nwd_r2(a, b-a)
+print(nwd_r2(24, 36))
+print(nwd_12(24, 36))
 print(nwd_r(24, 36))
 print(nwd_i(24, 36))
